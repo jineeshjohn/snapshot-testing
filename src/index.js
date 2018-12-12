@@ -1,25 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import { render } from 'react-dom';
+import Hello from './Hello';
 
-import Bar from "./Bar";
-import BarFragment from "./BarFragment";
-import Foo from "./Foo";
-import "./styles.css";
+const styles = {
+  fontFamily: 'sans-serif',
+  textAlign: 'center',
+};
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <h3>Bar</h3>
-      <Bar />
-      <h3>BarFragment</h3>
-      <BarFragment />
-      <h3>Foo</h3>
-      <Foo>This is Foo !</Foo>
-    </div>
-  );
-}
+const App = () => (
+  <div style={styles}>
+    <Hello name="CodeSandbox" />
+    <h2>Start editing to see some magic happen {'\u2728'}</h2>
+  </div>
+);
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+render(<App />, document.getElementById('root'));

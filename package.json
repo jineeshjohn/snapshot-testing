@@ -1,26 +1,24 @@
 {
-  "name": "snapshot-testing",
+  "name": "enzyme-find-and-dive",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "enzyme": "3.7",
-    "enzyme-adapter-react-16": "1.6",
-    "jest": "23.6.0",
-    "jest-styled-components": "6.3.1",
-    "react": "16.5.2",
-    "react-dom": "16.5.2",
-    "react-scripts": "2.0.3",
-    "react-test-renderer": "16.6.3",
-    "styled-components": "4.1.1"
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "jest": "22.4.3",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.4.9"
   },
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "CI=false react-scripts test --env=jsdom -- --updateSnapshot",
+    "test": "react-scripts test",
+    "test:watchAll": "react-scripts test --watchAll",
     "eject": "react-scripts eject"
-  },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  }
 }
